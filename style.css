@@ -363,3 +363,99 @@ nav a {
 @media (max-width: 500px) {
   nav a:not(.btn-nav) { display: none; }
 }
+
+/* ─── Engagements ───────────────────────────────────────── */
+.engagements {
+  padding: 6rem 0;
+  background: #fff;
+}
+
+.engagement-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 0;
+}
+
+.engagement-card {
+  border: 1px solid rgba(26,58,107,0.08);
+  border-radius: 8px;
+  padding: 2rem 2.25rem;
+  transition: box-shadow 250ms ease-out;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .engagement-card:hover {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05), 0 8px 24px rgba(26,58,107,0.09);
+  }
+}
+
+.engagement-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.engagement-header h3 {
+  font-size: 1.1rem;
+  color: #1a1a2e;
+  margin-bottom: 0.25rem;
+}
+
+.engagement-role {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #b8972e;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.engagement-dates {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #888;
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding-top: 0.15rem;
+}
+
+.engagement-card > p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+}
+
+.engagement-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #1a3a6b;
+  background: rgba(26,58,107,0.07);
+  border-radius: 4px;
+  padding: 0.25rem 0.65rem;
+}
+
+@media (max-width: 768px) {
+  .engagement-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .engagement-dates {
+    padding-top: 0;
+  }
+
+  .engagement-card {
+    padding: 1.5rem;
+  }
+}
